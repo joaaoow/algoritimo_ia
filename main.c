@@ -7,19 +7,11 @@
 //Matriz que representa o tabuleiro
 // 0 significa casa vazia
 // 1 significa que existe yuma rainha naquela posição
-int tabuleiro[N][N] {
-    int linha, coluna;
-
-    for (linha = 0, linha < N; linha++){
-        for (coluna = 0; coluna < N; coluna++){
-            tabuleiro[linha][coluna] = 0;
-        }
-    }
-}
+int tabuleiro[N][N];
 
 //Limpa o tabuleiro, colocando 0 em todas as posições
 void limparTabuleiro() {
-    int, coluna, linha;
+    int coluna, linha;
 
     for (linha = 0; linha < N; linha ++) {
         for (coluna = 0; coluna < N; coluna++) {
@@ -155,7 +147,7 @@ int resolverRainhas(int coluna) {
 
             // Se não deu certo, desfaz a escolha
             // Essa é a parte de "voltar" do backtraking
-            tabuleiro[linha][coluna] = 0
+            tabuleiro[linha][coluna] = 0;
         }
     }
 
